@@ -1,26 +1,32 @@
 {
   "name": "test-expo",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "expo start --host localhost",
+    "android": "start --android",
+    "ios": "start --ios",
+    "web": "start --web"
   },
   "dependencies": {
+    "@babel/runtime": "^7.19.0",
     "expo": "~46.0.13",
+    "expo-splash-screen": "^0.16.2",
     "expo-status-bar": "~1.4.0",
+    "nativewind": "^2.0.11",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-native": "0.69.6",
-    "react-native-web": "~0.18.7"
+    "react-native-web": "~0.18.7",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.69.1",
-    "typescript": "~4.3.5"
+    "tailwindcss": "^3.1.8",
+    "typescript": "~4.3.5",
+    "watchman": "^1.0.0"
   },
   "private": true
 }
